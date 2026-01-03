@@ -10,6 +10,9 @@ import sqlite3
 
 import models.book_analysis, models.macrocalendar, models.content_gen
 
+schema_1 = models.book_analysis.BookSchema
+schema_2 = models.macrocalendar.StudySchedule
+schema_3 = models.content_gen.WeeklyStudyPlan
 
 load_dotenv()
 api_key = os.getenv("GEMINI_API_KEY")
