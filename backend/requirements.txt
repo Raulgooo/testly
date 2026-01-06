@@ -8,6 +8,7 @@ python-multipart==0.0.21
 google-genai==1.56.0
 google-auth==2.45.0
 cachetools==6.2.4
+langgraph >= 1.0.0 
 
 # --- Data Validation & Settings ---
 pydantic==2.12.5
