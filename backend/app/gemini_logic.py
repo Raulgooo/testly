@@ -26,7 +26,7 @@ def gen_cache(book: str, ttl: int, display_n: str, gemini_model: Models):
             contents=[book_object],
             ttl=str(ttl) + "s",
         ),
-        return cache.cache_id
+        return display_n
     except Exception as e:
         return str(e)
 

@@ -43,7 +43,8 @@ class BookState(BaseModel):
     chapter_outline: Optional[List[ChapterOutline]] = None
     chapter_analyses: Optional[List[ChapterAnalysis]] = None
 
-
+class ProcessState(BaseModel):
+    book_parse_state : Optional[BookState] = None
 
 # old models
 class Chapter(BaseModel):
