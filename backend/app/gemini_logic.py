@@ -14,6 +14,13 @@ def upload_book(file_path: str):
         return book.name
     except Exception as e:
         return str(e)
+        
+def get_book(book_name: str):
+    try:
+        book = client.files.get(name=book_name)
+        return book
+    except Exception as e:
+        return str(e)
 
 def gen_cache(book: str, ttl: int, display_n: str, gemini_model: Models):
     try:
