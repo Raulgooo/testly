@@ -8,5 +8,6 @@ async def get_book_node(state: ProcessState):
     return {state.book_name: get_book_result}
 
 async def book_outline_node(state: ProcessState):
+    gemini = structured_llm.invoke("")
     
 
