@@ -2,6 +2,9 @@
 
 **As of right now, the workflow used to analyze pdf textbooks and generate the calendar + content is the following:**
 
+
+```mermaid
+
 ---
 config:
   layout: fixed
@@ -20,3 +23,4 @@ flowchart TB
     F --> I
     H --> I
     n1["N chapters are parsed from outline so chapter_analysis runs n times in parallel."]
+```
